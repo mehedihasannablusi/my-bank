@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My bank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700;800&family=Manrope:wght@200;300&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="text-center mt-9 mb-9 p-5  text-7xl font-bold text-red-500"> আমার সুইস ব্যাংকে স্বাগতম  </h1> 
+    <h1 class="text-center mt-9 mb-6 text-4xl font-bold text-red-500"> আমি বিশিষ্ট ব্যাংকার ওরুফে টোটো কম্পানির ম্যানেজার <br> <br> <span class="text-7xl p-8 m-8 text-green-500">A K M অমুক হাসান</span>  </h1> 
+
+    <section class="mt-8 mb-8">
+        <div class="mt-12 grid grid-cols-3 gap-4 mx-auto text-center">
+            <div class="bg-purple-500 p-8 w-9/12 mx-auto rounded-md">
+                <h1 class="text-3xl font-bold text-white mb-5">জমা</h1>
+                <h3 id="" class="text-5xl font-bold text-white">$<span id="deposit-total">00</span></h3>
+            </div>
+            <div class="bg-purple-500 px-8 py-8 w-9/12  rounded-md">
+                <h1 id="current -withdraw-field" class="text-3xl font-bold text-white mb-5">টাকা উঠান</h1>
+                <h3 id="" class="text-5xl font-bold text-white">$<span id="Withdraw-total">00</span></h3>
+            </div>
+            <div class="bg-purple-500 px-8 py-8 w-9/12  rounded-md">
+                <h1 class="text-3xl font-bold text-white mb-5">মোট ব্যালেন্স</h1>
+                <h3 class="text-5xl font-bold text-white">$<span id="current-balance">1240</span></h3> 
+            </div>
+        </div>
+    </section>
+
+    <!-- deposit section and witdrawa section -->
+
+    <div class=" grid  grid-cols-2 mt-8">
+        <div class="bg-blue-500 rounded-md w-5/6 p-4 mx-auto mt-8">
+            <h1 class="text-white text-4xl font-bold p-3">টাকা জমান</h1>
+           <input class="block mt-6 text-3xl font-bold text-center pt-5 w-5/6 border-none pb-6 rounded-md" type="text" placeholder="টাকার পরিমান" name="" id="deposit-field">
+           <button id="deposit-btn" class="bg-orange-500 hover:bg-red-600 text-center mt-6 py-4 px-8 rounded-md text-white  mb-4 text-3xl font-bold">জমান</button>
+
+        </div>
+        <div class="bg-purple-500 rounded-md w-5/6 p-4 mx-auto mt-8">
+            <h1 class="text-white text-4xl  font-bold p-3">টাকা উঠান</h1>
+           <input class="block mt-6  text-center pt-5 w-5/6 border-none pb-6 text-3xl font-bold rounded-md" type="text" placeholder="টাকার পরিমান"  name="" id="withdraw-field">
+           <button id="withdraw-btn" class="bg-orange-500 hover:bg-red-600 text-center mt-6 py-4 px-8 rounded-md text-white  mb-4 text-3xl font-bold">উঠান</button>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- this is main.js file -->
+
+
+    <script src="main.js"></script>
+    <script src="deposit.js"></script>
+
+   
+</body>
+</html>
